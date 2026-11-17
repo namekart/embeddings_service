@@ -1,5 +1,5 @@
 # Web
-fastapi==0.115.0
+fastapi==0.133.0
 uvicorn[standard]==0.30.6
 pydantic==2.8.2
 
@@ -7,3 +7,5 @@ pydantic==2.8.2
 # index so we don't pull the multi-GB CUDA build.
 sentence-transformers==3.0.1
 numpy==1.26.4
+
+starlette>=1.0.1 # transitive dependency pinned by Aikido Autofix to remediate a vulnerability
